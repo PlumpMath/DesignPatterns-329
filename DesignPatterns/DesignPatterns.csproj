@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F5AFAA0-7856-4CDE-8950-0519B324FF8C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factory\CheesePizza.cs" />
+    <Compile Include="Factory\PepporoniPizza.cs" />
+    <Compile Include="Factory\Pizza.cs" />
+    <Compile Include="Factory\PizzaStore.cs" />
+    <Compile Include="Factory\SimplePizzaFactory.cs" />
+    <Compile Include="Factory\VeggiePizza.cs" />
+    <Compile Include="Iterator\DinnerMenu.cs" />
+    <Compile Include="Iterator\DinnerMenuIterator.cs" />
+    <Compile Include="Iterator\Iterator.cs" />
+    <Compile Include="Iterator\Menu.cs" />
+    <Compile Include="Iterator\PanCakeHouseIterator.cs" />
+    <Compile Include="Iterator\PanCakeHouseMenu.cs" />
+    <Compile Include="Observer\DisplayElements.cs" />
+    <Compile Include="Observer\ForecastDisplay.cs" />
+    <Compile Include="Observer\Observer.cs" />
+    <Compile Include="Observer\Subject.cs" />
+    <Compile Include="Observer\WeatherData.cs" />
+    <Compile Include="Singleton\ClassicSingleton.cs" />
+    <Compile Include="Singleton\SingletonUsingSyncronization.cs" />
+    <Compile Include="Singleton\StaticSingleton.cs" />
+    <Compile Include="State\GumballMachine.cs" />
+    <Compile Include="State\HasQuaterState.cs" />
+    <Compile Include="State\NoQuarterState.cs" />
+    <Compile Include="State\SoldOutState.cs" />
+    <Compile Include="State\SoldState.cs" />
+    <Compile Include="State\State.cs" />
+    <Compile Include="Strategy\Duck.cs" />
+    <Compile Include="Strategy\DuckSimulator.cs" />
+    <Compile Include="Strategy\FlyBehaviour.cs" />
+    <Compile Include="Strategy\FlyNoWay.cs" />
+    <Compile Include="Strategy\FlyWithRockets.cs" />
+    <Compile Include="Strategy\FlyWithWings.cs" />
+    <Compile Include="Strategy\MuteQuack.cs" />
+    <Compile Include="Strategy\NormalQuack.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\QuackBehaviour.cs" />
+    <Compile Include="Strategy\RedHeadDuck.cs" />
+    <Compile Include="Strategy\RubberDuck.cs" />
+    <Compile Include="Strategy\Squeak.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
